@@ -1,0 +1,42 @@
+
+
+body {
+    align-items: center;
+    margin:0 auto;
+    background-color: white;
+}
+
+#leftside {
+    background-color:coral;
+    width: 400px;
+    height: 100vh;
+}
+
+.btn {
+    text-align: center ;
+    position: fixed;
+    left: 220px;
+    background-color: rgb(255, 200, 0);
+    width: 100px;
+    height: 30px;
+    border-radius: 8%;
+    font-size: 130%;
+}
+
+#home-btn {
+    top: 280px;
+}
+
+#blog-btn {
+    top: 340px;
+}
+
+#about-btn {
+    top: 400px;
+}
+
+#logo {
+    position: fixed;
+    left: 50px;
+    top: 70px;
+}
