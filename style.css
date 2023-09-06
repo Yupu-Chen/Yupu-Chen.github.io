@@ -21,6 +21,11 @@ body {
     height: 30px;
     border-radius: 8%;
     font-size: 130%;
+    transition: background-color 0.5s;
+}
+
+.btn:hover{
+    background-color: white;
 }
 
 #home-btn {
