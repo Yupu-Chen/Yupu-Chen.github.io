@@ -4,23 +4,33 @@ body {
     align-items: center;
     margin:0 auto;
     background-color: white;
+    overflow-x: hidden;
 }
 
+
+
+
 #leftside {
-    background-color:coral;
+    position: fixed;
+    background-color:#8DDFCB;
     width: 400px;
     height: 100vh;
 }
 
 .btn {
     text-align: center ;
-    position: fixed;
+    line-height: 35px;
+    position: absolute;
     left: 220px;
-    background-color: rgb(255, 200, 0);
+    background-color: #9bdecd;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 5%;
     width: 100px;
-    height: 30px;
-    border-radius: 8%;
+    height: 35px;
     font-size: 130%;
+    font-family: Arial, Helvetica, sans-serif;
     transition: background-color 0.5s;
 }
 
@@ -41,7 +51,22 @@ body {
 }
 
 #logo {
-    position: fixed;
+    position: absolute;
     left: 50px;
     top: 70px;
+}
+
+#main-content {
+    position: absolute; 
+    top: 0px; 
+    left:0px;
+    bottom:0px;
+    right:0px;
+    margin-left: 600px;
+    margin-top: 20px;
+    margin-right: 100px;
+    width: 600px;
+    padding: 20px;
+
+    font-family: Georgia, serif;
 }
