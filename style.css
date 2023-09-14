@@ -1,5 +1,3 @@
-
-
 body {
     align-items: center;
     margin:0 auto;
@@ -7,30 +5,23 @@ body {
     overflow-x: hidden;
 }
 
-
-
-
 #leftside {
     position: fixed;
-    background-color:#8DDFCB;
-    width: 400px;
+    background-color:#4d8fe1b0;
+    width: 120px;
     height: 100vh;
 }
 
 .btn {
-    text-align: center ;
+    text-align: left;
     line-height: 35px;
     position: absolute;
-    left: 220px;
-    background-color: #9bdecd;
-    border-color: white;
-    border-style: solid;
-    border-width: 3px;
+    left: 20px;
     border-radius: 5%;
     width: 100px;
     height: 35px;
     font-size: 130%;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     transition: background-color 0.5s;
 }
 
@@ -43,30 +34,30 @@ body {
 }
 
 #blog-btn {
-    top: 340px;
+    top: 360px;
 }
 
 #about-btn {
-    top: 400px;
+    top: 440px;
 }
 
 #logo {
     position: absolute;
-    left: 50px;
-    top: 70px;
+    height:120px;
+    width:120px;
+    left: 3px;
+    top: -26px;
 }
 
 #main-content {
     position: absolute; 
-    top: 0px; 
-    left:0px;
-    bottom:0px;
-    right:0px;
-    margin-left: 600px;
+    margin-left: 550px;
     margin-top: 20px;
     margin-right: 100px;
-    width: 600px;
+    max-width: 600px;
     padding: 20px;
+    line-height: 1.5;
+    font-size:larger;
 
     font-family: Georgia, serif;
 }
