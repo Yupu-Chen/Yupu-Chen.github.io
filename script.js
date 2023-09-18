@@ -5,6 +5,16 @@ const homeBtn = document.getElementById("home-btn");
 const blogBtn = document.getElementById("blog-btn");
 const aboutBtn = document.getElementById("about-btn");
 
+const MFF30 = document.getElementById("MFF30");
+
+MFF30.onclick = function(){
+    if (window.getComputedStyle(blogs, null).getPropertyValue("visibility") == "hidden") {
+        blogs.style.visibility = "visible";
+        home.style.visibility = "hidden";
+        about.style.visibility = "hidden";
+    }
+}
+
 let buttons;
 
 homeBtn.onclick = function () {
