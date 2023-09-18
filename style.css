@@ -58,12 +58,14 @@ div.content {
     margin-bottom: 10px;
     margin-right: 40px;
     max-height: 90vh;
-    max-width: 760px;
+    width: 760px;
     padding: 20px;
     line-height: 1.5;
     font-size: larger;
-
     font-family: Georgia, serif;
+
+    overflow-x: clip;
+    overflow-y:auto;
 }
 
 #home {
@@ -71,8 +73,6 @@ div.content {
 }
 
 #blogs {
-    overflow: auto;
-    overflow-y:auto;
     visibility: hidden;
 }
 
