@@ -51,14 +51,14 @@ body {
     top: -26px;
 }
 
-.content {
+div.content {
     position: absolute;
     left: 550px;
     top: 20px;
     margin-bottom: 10px;
     margin-right: 40px;
     max-height: 90vh;
-    max-width: 50vw;
+    max-width: 760px;
     padding: 20px;
     line-height: 1.5;
     font-size: larger;
