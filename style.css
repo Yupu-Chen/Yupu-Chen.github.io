@@ -87,6 +87,10 @@ div.content {
     visibility: visible;
 }
 
+#home::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
 #blogs {
     visibility: hidden;
 }
@@ -97,4 +101,8 @@ div.content {
 
 #about {
     visibility: hidden;
+}
+
+#about::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
 }
