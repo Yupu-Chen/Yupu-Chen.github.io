@@ -90,9 +90,9 @@ div.content {
     position: absolute;
     left: 550px;
     top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 0px;
     margin-right: 40px;
-    max-height: 90vh;
+    max-height: 95vh;
     width: 740px;
     line-height: 1.5;
     font-size: larger;
