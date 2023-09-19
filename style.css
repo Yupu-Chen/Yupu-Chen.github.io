@@ -60,11 +60,30 @@ body {
 
 #MFF30 img {
     /*reference: https://www.corelangs.com/css/box/zoom.html*/
-    -webkit-transition: scale .5s ease; /*Safari and Chrome*/
+    -webkit-transition-property: scale, filter;
+    -webkit-transition-duration: .5s;
+    -webkit-transition-timing-function: ease;
+    /*Safari and Chrome*/
 }
 
-#MFF30:hover img{
-    scale:1.5;
+#MFF30:hover img {
+    scale: 1.5;
+    filter: brightness(45%);
+}
+
+#mask {
+    position: absolute;
+    left: 200px;
+    top: 560px;
+    font-size: 50px;
+    color:aliceblue;
+    visibility: hidden;
+    -webkit-transition: visibility, 1s, ease;
+
+}
+
+#MFF30:hover p {
+    visibility: visible;
 }
 
 div.content {
@@ -81,29 +100,32 @@ div.content {
     font-family: Georgia, serif;
 
     overflow-x: clip;
-    overflow-y:auto;
+    overflow-y: auto;
 }
 
 #home {
     visibility: visible;
 }
 
-#home::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+#home::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
 #blogs {
     visibility: hidden;
 }
 
-#blogs::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+#blogs::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
 
 #about {
     visibility: hidden;
 }
 
-#about::-webkit-scrollbar { 
-    display: none;  /* Safari and Chrome */
+#about::-webkit-scrollbar {
+    display: none;
+    /* Safari and Chrome */
 }
