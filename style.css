@@ -57,11 +57,12 @@ body {
     width: 700px;
     overflow: hidden;
 }
+
 #MFF30 img {
     /*reference: https://www.corelangs.com/css/box/zoom.html*/
     -webkit-transition: scale .5s ease; /*Safari and Chrome*/
-    
 }
+
 #MFF30:hover img{
     scale:1.5;
 }
