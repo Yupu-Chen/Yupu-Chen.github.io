@@ -73,8 +73,8 @@ body {
 
 #mask {
     position: absolute;
-    left: 200px;
-    top: 560px;
+    left: 190px;
+    top: 540px;
     font-size: 50px;
     color: aliceblue;
     visibility: hidden;
