@@ -55,6 +55,7 @@ function makeVisible() {
     }
 }
 
+// slider code reference: https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/
 slides.forEach((slide, indx) => {
     slide.style.transform = `translateX(${indx * 100}%)`;
 });
