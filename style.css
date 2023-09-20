@@ -8,6 +8,10 @@ body {
     display: block;
 }
 
+a:link {
+    color:black;
+}
+
 #leftside {
     position: fixed;
     background-color: #4d8fe1b0;
