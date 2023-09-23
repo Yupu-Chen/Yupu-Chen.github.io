@@ -9,7 +9,7 @@ body {
 }
 
 a:link {
-    color: black;
+    color: black; /* This changes the default hyperlink color from blue to back*/
 }
 
 #leftside {
@@ -171,7 +171,6 @@ div.content {
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color:transparent;
-    /* put the height and width of your image here */
     width: 40px;
     height: 40px;
     padding: 10px;

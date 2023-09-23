@@ -8,7 +8,7 @@
 </head>
 
 <body>
-
+    <!-- This is the sidebar -->
     <div id="leftside">
         <img id="logo" src="Blogging.png" alt="This is a logo writing Blogging">
         <div id="home-btn" class="btn">HOME</div>
@@ -16,6 +16,7 @@
         <div id="about-btn" class="btn">ABOUT</div>
     </div>
 
+    <!-- This div holds everything displayed on the right of the website; id is each section -->
     <div id="home" class="content">
         <h3 style="font-size: 40px">Welcome to My Blogging!</h3>
         <h4 style="color: rgb(61, 61, 61);">"I write songs that are like diary entries. I have to do it in order to
@@ -29,10 +30,10 @@
         </p>
         <br>
         <div id="MFF30"><img src="30MFF.jpg" alt="a film festival logo of 30MFF" width="700px" height="240px">
-            <p id="mask">A Summer Story</p>
+            <p id="mask">A Summer Story</p> <!-- The text will appear when mouse hovers on the image-->
         </div>
     </div>
-    
+
     <div id="blogs" class="content">
         <h3 style="font-size: 40px">30MFF: A Summer Story</h3>
         <iframe width="780" height="450" src="https://www.youtube.com/embed/HlT4bdnsxzE"></iframe>
@@ -48,6 +49,7 @@
             squealing with delight as they splashed and frolicked in the shallows. Each crashing wave felt like a
             playful embrace from the ocean, washing away the cares of the world. Adults, riding their water jets, were
             also indulging themselves in this heat and energy of summer.</p>
+        <!-- This div is the photo carousel, reference: https://blog.logrocket.com/build-image-carousel-from-scratch-vanilla-javascript/-->
         <div class="slider">
             <div class="slide">
                 <img src="Slide1.jpeg" alt="" />
@@ -59,55 +61,56 @@
                 <img src="Slide3.jpg" alt="" />
             </div>
             <button class="select" id="next"></button>
-            <button class="select" id="prev">
-                </div>
-                    <p>Those on the beach, taking a moment to relax, reclined on beach chairs beneath the shade of the
-                        umbrella.
-                        They watched their children with smiles, cherishing these moments of pure, unadulterated
-                        happiness. Seagulls
-                        glided overhead, their graceful wings casting shadows on the sand.</p>
-                    <p>Soon, the afternoon approached. Back to the city, as the sun graces the urban landscape with its
-                        warmth,
-                        parks and green spaces become popular retreats, where picnickers gather and children frolic.
-                        Sidewalk cafes
-                        spill onto the streets, filling the air with the tantalizing aroma of diverse cuisines.
-                        Festivals and
-                        outdoor events abound, offering a kaleidoscope of entertainment options, from open-air concerts
-                        to art
-                        exhibitions. </p>
-                    <p>Evenings are a symphony of city lights and laughter, as residents and visitors alike savor the
-                        warm nights, creating memories against the backdrop of the urban skyline. Summer in the city is
-                        a time when
-                        the metropolis truly comes alive, inviting everyone to partake in its lively spirit.</p>
-                    <p>Summer, by the ocean or in the city, is a season full of life and energy. And for me, it nenver
-                        ends.</p>
-                    <p style="font-size: 13px;"><em>Photo Gallery Sources: 1.My own, 2.Photo by <a
-                                href="https://unsplash.com/@angelacompagnone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Angela
-                                Compagnone</a> on <a
-                                href="https://unsplash.com/photos/q9xlAym53ak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                            3.Photo by <a
-                                href="https://unsplash.com/@angelabaileyy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Angela
-                                Bailey</a> on <a
-                                href="https://unsplash.com/photos/MrL-bgkuUfU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-                        </em>
-                    </p>
+            <button class="select" id="prev"></button>
         </div>
-        <div id="about" class="content">
-            <h3 style="font-size: 40px">About Blogging</h3>
-            <p>Blogging is an online platform that empowers individuals to create and share their unique perspectives,
-                experiences, and insights with a global audience. </p>
-            <p>Through this website, users can craft and publish
-                their own blogs, providing a space for creative expression, information sharing, and community building.
-                Whether it's personal reflections, expert opinions, or niche interests, Blogging offers a versatile and
-                accessible medium for anyone to contribute to the digital landscape and engage with like-minded
-                individuals worldwide. Explore the diverse world of blogging and join the conversation today!</p>
-            <br><br><br><br><br><br><br>
-            <p style="font-size: 15px; text-align: center;"><em>Contact us</em></p>
-            <p style="font-size: 15px; text-align: center;"><em>Email: contact@blogging.com</em></p>
-            <p style="font-size: 15px; text-align: center;"><em>Tel: +971 05688889</em></p>
-        </div>
+        <p>Those on the beach, taking a moment to relax, reclined on beach chairs beneath the shade of the
+            umbrella.
+            They watched their children with smiles, cherishing these moments of pure, unadulterated
+            happiness. Seagulls
+            glided overhead, their graceful wings casting shadows on the sand.</p>
+        <p>Soon, the afternoon approached. Back to the city, as the sun graces the urban landscape with its
+            warmth,
+            parks and green spaces become popular retreats, where picnickers gather and children frolic.
+            Sidewalk cafes
+            spill onto the streets, filling the air with the tantalizing aroma of diverse cuisines.
+            Festivals and
+            outdoor events abound, offering a kaleidoscope of entertainment options, from open-air concerts
+            to art
+            exhibitions. </p>
+        <p>Evenings are a symphony of city lights and laughter, as residents and visitors alike savor the
+            warm nights, creating memories against the backdrop of the urban skyline. Summer in the city is
+            a time when
+            the metropolis truly comes alive, inviting everyone to partake in its lively spirit.</p>
+        <p>Summer, by the ocean or in the city, is a season full of life and energy. And for me, it nenver
+            ends.</p>
+        <p style="font-size: 13px;"><em>Photo Gallery Sources: 1.My own, 2.Photo by <a
+                    href="https://unsplash.com/@angelacompagnone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Angela
+                    Compagnone</a> on <a
+                    href="https://unsplash.com/photos/q9xlAym53ak?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+                3.Photo by <a
+                    href="https://unsplash.com/@angelabaileyy?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Angela
+                    Bailey</a> on <a
+                    href="https://unsplash.com/photos/MrL-bgkuUfU?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </em>
+        </p>
+    </div>
 
-        <script src="script.js"></script>
+    <div id="about" class="content">
+        <h3 style="font-size: 40px">About Blogging</h3>
+        <p>Blogging is an online platform that empowers individuals to create and share their unique perspectives,
+            experiences, and insights with a global audience. </p>
+        <p>Through this website, users can craft and publish
+            their own blogs, providing a space for creative expression, information sharing, and community building.
+            Whether it's personal reflections, expert opinions, or niche interests, Blogging offers a versatile and
+            accessible medium for anyone to contribute to the digital landscape and engage with like-minded
+            individuals worldwide. Explore the diverse world of blogging and join the conversation today!</p>
+        <br><br><br><br><br><br><br>
+        <p style="font-size: 15px; text-align: center;"><em>Contact us</em></p>
+        <p style="font-size: 15px; text-align: center;"><em>Email: contact@blogging.com</em></p>
+        <p style="font-size: 15px; text-align: center;"><em>Tel: +971 05688889</em></p>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

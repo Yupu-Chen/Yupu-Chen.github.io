@@ -8,6 +8,7 @@ const slides = document.querySelectorAll(".slide");
 
 const MFF30 = document.getElementById("MFF30");
 
+// does the same thing as makeVisible, but this only applies to the zoom-in 30MFF image
 MFF30.onclick = function () {
     if (window.getComputedStyle(blogs, null).getPropertyValue("visibility") == "hidden") {
         blogs.style.visibility = "visible";
@@ -16,7 +17,7 @@ MFF30.onclick = function () {
     }
 }
 
-let buttons;
+let buttons; // determine which button is clicked
 
 homeBtn.onclick = function () {
     buttons = 0;
@@ -32,7 +33,7 @@ blogBtn.addEventListener("click", makeVisible);
 homeBtn.addEventListener("click", makeVisible);
 aboutBtn.addEventListener("click", makeVisible);
 
-
+// make the section visible according to which button is clicked
 function makeVisible() {
     if (buttons == 1) {
         if (window.getComputedStyle(blogs, null).getPropertyValue("visibility") == "hidden") {
