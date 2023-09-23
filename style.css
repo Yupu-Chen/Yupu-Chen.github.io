@@ -34,6 +34,7 @@ a:link {
 
 .btn:hover {
     background-color: white;
+    cursor: pointer;
 }
 
 #home-btn {
@@ -73,6 +74,7 @@ a:link {
 #MFF30:hover img {
     scale: 1.5;
     filter: brightness(45%);
+    cursor: pointer;
 }
 
 #mask {
