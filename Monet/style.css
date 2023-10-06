@@ -1,0 +1,84 @@
+html {
+    height: 100%;
+    overflow-x: hidden;
+    font-family: 'Helvetica', sans-serif;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+}
+
+/*Parallelox effect*/
+#bridge,
+#pond,
+#nympheas,
+#river-bank {
+    height: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+}
+
+#bridge {
+    background-image: url('img/The\ Japanese\ Footbridge.jpg');
+}
+
+#pond {
+    background-image: url('img/Water\ Lily\ Pond.jpg');
+}
+
+#nympheas {
+    background-image: url('img/Nympheas.jpg');
+}
+
+#river-bank {
+    background-image: url("img/Banks\ of\ the\ Seine.jpg");
+}
+
+
+.text-section {
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    position: absolute;
+    line-height: 1.5;
+    font-size: larger;
+    width: 75%;
+}
+
+#monet-div {
+    position: fixed;
+    bottom: 0px;
+    left: -20px;
+    text-align: center;
+}
+
+#monet-text {
+    position: fixed;
+    bottom: 80px;
+    left: 220px;
+    color: white;
+    background-color: black;
+    font-size: 28px;
+    padding-bottom: 15px;
+}
+
+/*import new font*/
+@font-face {
+    font-family: Zebra;
+    src: url(font/Zebraliner.ttf);
+}
+
+#title {
+    position: absolute;
+    left: 37vw;
+    top: 40px;
+    font-family: Zebra;
+    font-size: 45px;
+    color: white;
+}
