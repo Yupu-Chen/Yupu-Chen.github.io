@@ -11008,7 +11008,7 @@ a.text-dark:hover, a.text-dark:focus {
 }
 
 .infos .title .font-small {
-  color: #fff;
+  color: #872341;
   font-size: 13px;
 }
 
@@ -11922,9 +11922,9 @@ pre .code {
   color: #6c757d;
 }
 
-.footer .social-links a:hover {
-  background: #695aa6;
-  border-color: #695aa6;
+.section .social-links a:hover {
+  background: #872341;
+  border-color: #872341;
   color: #fff;
   text-decoration: none;
 }
