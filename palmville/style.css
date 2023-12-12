@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&family=Poppins&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+}
+
+#home-wrapper {
+    font-family: 'Poppins', sans-serif;
+    height: 200vh;
+}
+
+.header {
+    z-index: 10;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+    background-color: #426a95;
+    position: fixed;
+    height: 25px;
+}
+
+#palms-pic {
+    height: 40%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)), url('./images/palms.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    position: relative;
+    color: #FEF3E2;
+    transition: 0.5s all ease;
+    font-size: 64px;
+}
+
+#palms-pic:hover {
+    background-size: 110%;
+    font-size: 70px;
+}
+
+.header-item {
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    scale: 1;
+    transition: 0.2s  all ease;
+    color: white;
+    font-size: 20px;
+}
+
+.header-item:hover {
+    scale: 1.05;
+}
+
+.title{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    opacity: 0;
+}
+
+.title.loaded{
+    opacity: 1;
+}
+
+.video-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    gap: 50px;
+    padding: 3%;
+    color: white;
+    padding-bottom: 5%;
+    background-color: #1c98be;
+}
+
+.video-title {
+    font-size: 36px;
+}
+
+.video-text{
+    width: 70%;
+    text-align: center;
+}
+
+.scroll-anim {
+    transform: translateY(50px);
+    opacity: 0;
+    transition: 0.5s all ease;
+}
+
+.scroll-anim.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.video {
+    position: relative;
+    width: 75%;
+    height: 80%;
+    max-width: 745px;
+}
+
+#residents-section {
+    width: 100%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+    background-color: white;
+    color: #426a95;
+}
+
+#residents-grid {
+    margin-top: 100px;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.res-grid {
+    color: white;
+    padding-inline: 15px;
+    /* border: 2px solid black; */
+    border-radius: 16px;
+    padding-block: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* background-color: #426a95; */
+    background-color: #1c98be;
+    box-shadow: inset 0 2px 4px 0 rgb(0 0 0 / 0.05);
+}
+
+.res-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #426a95;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+    background-size: 175%;
+    transition: 0.5s all ease;
+}
+
+.res-pic:hover {
+    background-size: 200%;
+}
+
+#sheriff-pic {
+    background-color: white;
+    background-image: url(./images/sheriff.png);
+    background-position: center;
+}
+
+#couple-pic {
+    background-color: white;
+    background-image: url(./images/couple.png);
+    background-position: center;
+    background-size: 125%;
+}
+
+#couple-pic:hover {
+    background-size: 150%;
+}
+
+#restaurant-pic {
+    background-color: white;
+    background-image: url(./images/chef.png);
+    background-position: center;
+    background-size: 110%;
+}
+
+#restaurant-pic:hover {
+    background-size: 130%;
+}
+
+.res-btn {
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 16px;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    transition: 0.2s all ease;
+}
+
+.res-btn:hover {
+    color: black;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.res-btn:hover {
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+}
+
+.res-name {
+    font-size: 24px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+  
+.modal-content {
+    position: relative;
+    background-color: #6b6b6b;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+  
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-right: 15px;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#sign-up-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-block: 5%;
+    background-color: #426a95;
+}
+
+#signup-form {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, 02);
+    border-radius: 10px;
+    padding: 30px 40px;
+    color: #fff;
+}
+  
+input {
+    box-sizing: border-box;
+    margin: 5px;
+    width: 100%;
+    height: 50px;
+    background: none;
+    outline: none;
+    border: 2px solid;
+    border-radius: 40px;
+    padding: 20px 45px 20px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+::placeholder {
+    color: white;
+}
+
+::-ms-input-placeholder {
+    color: white;
+}
+  
+.submit-btn{
+    margin-top: 5px;
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    outline: none;
+    border : solid #fff;
+    border-radius: 40px ;
+    font-size: 16px;
+    color: #000;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#result {
+    display: flex;
+    opacity: 0;
+    gap: 10px;
+    transition: 1s all ease;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./index.js" defer></script>
+    <title>Palmville</title>
+</head>
+<body>
+    <div id="home-wrapper">
+        <div class="header">
+            <div class="header-item" id="home">Home</div>
+            <div class="header-item" id="about">About</div>
+            <div class="header-item" id="res-btn">Residents</div>
+            <div class="header-item" id="sign-up">Sign Up</div>
+        </div>
+        <div id="palms-pic">
+            <div class="title">
+                Palmville
+            </div>
+        </div>
+        <div class="video-section" id="about-section">
+            <div class="video-title">Discover the Heart and Soul of a Desert Sanctuary</div>
+            <div class='video-text scroll-anim'>
+                Embark on a cinematic exploration of PalmVille, a town enshrouded in desert mystery
+                and steeped in traditions passed down through the ages. Our documentary ventures
+                deep into the lives of the PalmVille residents, exploring their personal histories 
+                and revealing the untold stories that form the fabric of this wonderful community.
+            </div>
+            <div class="video">
+                <iframe width="896" height="504" src="https://www.youtube.com/embed/o_VT6StKoCw" title="PalmVille Intro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div id="residents-section">
+            <div class="video-title scroll-anim">Meet some of our residents</div>
+            <div id="residents-grid">
+                <div class="res-grid">
+                    <div class="res-pic" id="sheriff-pic"></div>
+                    <div class="res-name">Sheriff Oakley Williams</div>
+                    <div>
+                        A stalwart emblem of PalmVille's justice system, Sheriff Oakley is renowned 
+                        for his unwavering dedication to the community's laws and history. Possessing 
+                        a keen sense of duty and understanding of the town's values and 
+                        traditions, he embodies the protective spirit that has safeguarded and watched 
+                        over PalmVille and its constant peace for generations.
+                    </div>
+                    <div class="res-btn" id="sheriff-btn">Learn More</div>
+                </div>
+                <div class="res-grid">
+                    <div class="res-pic" id="couple-pic"></div>
+                    <div class="res-name">Mia and Oliver Addams</div>
+                    <div>                
+                        Mia and Oliver Addams are PalmVille's quintessential couple, blending their 
+                        heritage with the town's communal tapestry. Mia's familial legacy in hospitality 
+                        echoes through their cherished hotel, while Oliver, son of the sheriff, cherishes 
+                        the town's traditions and unity. Together, they represent the harmony of 
+                        PalmVille's legacy and aspirations.
+                    </div>
+                    <div class="res-btn" id="couple-btn">Learn More</div>
+                </div>
+                <div class="res-grid">
+                    <div class="res-pic" id="restaurant-pic"></div>
+                    <div class="res-name">Julian Saffron</div>
+                    <div>
+                        Julian Saffron, PalmVille's cherished chef, infuses his dishes with the essence 
+                        of his travels and a love for exotic spices. Transforming a traveling salesman's 
+                        dream into reality, he founded a local eatery that has become a culinary landmark. 
+                        His passion for flavor and innovation makes his restaurant a cultural staple, 
+                        where each meal is a testament to the town's vibrant spirit.
+                    </div>
+                    <div class="res-btn" id="chef-btn">Learn More</div>
+                </div>
+                <div id="sheriff-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe width="896" height="504" src="https://www.youtube.com/embed/qoPOcTXe_1o" title="Sheriff" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="couple-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe width="896" height="504" src="https://www.youtube.com/embed/Ar-yUBJ9OK8" title="Oliver &amp; Mia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div id="chef-modal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <iframe width="896" height="504" src="https://www.youtube.com/embed/qexZzNYuQ0E" title="Restaurant Owner" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="sign-up-section">
+            <div class="video-title scroll-anim">
+                Join Palvmille 
+            </div>
+            <div id="signup-form">
+                <div class="input">
+                    <input type="text" placeholder="First Name" required>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Email" required>
+                </div>
+                <div class="input">
+                    <input type="tel" placeholder="Phone Number" required>
+                </div>
+            <button type="submit" class="submit-btn">Sign up</button>
+            </div>
+            <div id="result">
+                <img src="./images/thumbs-up.svg" alt="Thumbs up">
+                <div class='signed-up'>Sign up Successful!</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
