@@ -55,6 +55,7 @@ html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  scroll-behavior: smooth !important;
 }
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
@@ -70,6 +71,7 @@ body {
   color: #212529;
   text-align: left;
   background-color: #fff;
+  scroll-behavior: smooth !important;
 }
 
 [tabindex="-1"]:focus {
@@ -162,13 +164,13 @@ sup {
 }
 
 a {
-  color: #695aa6;
+  color: #872341;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: #493f75;
+  color: #BE3144;
   text-decoration: none;
 }
 
@@ -11253,46 +11255,6 @@ p {
   }
 }
 
-/* testmonial card */
-.testimonial-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 30px;
-}
-
-.testimonial-card-img-holder {
-  min-width: 45px;
-  max-width: 45px;
-  z-index: 999;
-}
-
-.testimonial-card-img {
-  background: #fff;
-  padding: 4px;
-  width: 90px;
-  height: 90px;
-  border-radius: 50%;
-}
-
-.testimonial-card-body {
-  text-align: left;
-  border: 1px solid #dee2e6;
-  background: #fff;
-  padding: 20px 20px 20px 60px;
-  border-radius: 0;
-}
-
-.testimonial-card-title {
-  margin-top: 20px;
-  font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1300 - 300)));
-}
-
 /* blog wrapper */
 .blog-card {
   display: -webkit-box;
@@ -11981,7 +11943,7 @@ pre .code {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  max-width: 550px;
+  max-width: 700px;
 }
 
 .header .header-content .header-title .up {
@@ -11994,7 +11956,7 @@ pre .code {
 }
 
 .header .header-content .header-title .down {
-  font-size: calc(30px + (75 - 30) * ((100vw - 300px) / (1300 - 300)));
+  font-size: calc(30px + (75 - 40) * ((100vw - 300px) / (1300 - 300)));
   margin-bottom: 0;
   position: relative;
   display: block;
@@ -12129,4 +12091,8 @@ pre .code {
 
 .section-lg {
   padding: 100px 0 !important;
+}
+
+#Chinese-tag {
+  font-language-override: "CHI";
 }
