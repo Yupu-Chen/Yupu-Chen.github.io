@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Yupu Chen's Page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + Meyawo main styles -->
+    <link rel="stylesheet" href="assets/css/meyawo.css">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="https://yupu-chen.github.io/portfolio">YUPU CHEN</a>
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="https://yupu-chen.github.io/portfolio/#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="https://yupu-chen.github.io/portfolio/#about">About</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="https://yupu-chen.github.io/portfolio/#service">Skills</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="https://yupu-chen.github.io/portfolio/#portfolio">Portfolio</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="https://yupu-chen.github.io/portfolio/#blog">Thoughts</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="https://yupu-chen.github.io/portfolio/#contact">Contact</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header" style="background-image: none; min-height: 0px; height: 30vh;">
+        <div class="overlay" style="height: 70%;"></div>
+    </header><!-- end of page header -->
+
+    <section class="section">
+        <div style="display: inline-block; margin-left: 7vw; max-width: fit-content;">
+            <a href="https://Yupu-Chen.github.io/portfolio/#portfolio" style="text-decoration: underline;">return to
+                main page</a>
+            <p></p>
+            <p>Creator: Yupu Chen</p>
+            <p>Year: 2023-24</p>
+            <p>Place: Berlin, Germany</p>
+            <p>Keywords: AR, iOS, Gallery</p>
+        </div>
+        <div style="padding: auto; position: relative; margin-left: 20vw; margin-right: 20vw; max-width: fit-content;">
+            <p>GalleryEverywhere is an iOS AR application that allows users to curate their own exhibitions in the space
+                of
+                their own choice.
+                The idea was inspired by concept of <a
+                    href="https://www.tandfonline.com/doi/full/10.1080/02601370.2017.1373710#abstract"
+                    style="text-decoration: underline;">ignorant museums</a>, in which an emancipatory experience of
+                knowledge
+                creation in the context of art museums is explored, and <a
+                    href="https://vanabbemuseum.nl/en/collection-research/research/search-in-research/diy-archive"
+                    style="text-decoration: underline;">the Van Abbemuseum's DIY Archive project</a>.
+                The goal of GalleryEverywhere is to use AR as a means of creating accessibility and allowing everyone to
+                digitally handle and interact
+                with works most people would never be able to touch in real life.
+            </p>
+            <h5>Technology</h5>
+            <p>
+                Originally, the project was developed in Unity3D with its relatively new integration of ARKit and XRKit
+                packages.
+                With Unity3D, it was easy to manipulate the AR function with these packages as many functions are
+                premade and available to use; however, the precision of some key functions, including plane detection
+                and anchor placement, is compromised.
+                Therefore, this project was later re-developed in Swift and SwiftUI with a more direct access to ARKit
+                (RealityKit in later versions). This new version included new background features like scene
+                reconstruction and LiDR if supported the user's device as well as AR Coaching interface provided by
+                Apple. The latest version of GalleryEverywhere could detect different planes in real world precisely and
+                create anchors accordingly
+            </p>
+            <h5>User Interface / Interaction</h5>
+            <p>
+                As an experimental project, the UX/UI is designed to be simple and straightforward to ensure
+                accessibility directly to the core function of learning about art works and play with them. Only one
+                button is available at the upper right corner of the screen upon openning the APP. Clicking this button
+                leads to the built-in art libraries, where the user could get basic information about the work by
+                clicking on a specific artwork and decide to put it onto the AR scene by clicking "Add" button.
+            </p>
+            <p>
+                After the user puts at least one artwork to the AR scene, they can now manipulate what they have put
+                there. Simply holding and dragging on a particular work will enable the user to move the work on its own
+                plane. With two-finger zooming-in-and-out gesture, the user can change the scale of the work in the AR
+                scene. By doubleing clicking on onw artwork, the user is able to delete it from the AR scene.
+            </p>
+            <p>
+                The minimalist design is also purposeful to avoid any implicit meaning-making as much as possible on our
+                part, externally imposing certain views or understandings of the art
+                on users since it is an essential ideology of ignorant museums. Instead, users are able to choose any
+                piece from our collection, view some basic factual
+                information about it, and if they please, arrange it digitally on the space around them using AR. In
+                this independent, individualized curation process, the user might make meanings for their own
+                selections, even unconsciously.
+            </p>
+            <h5>Future Development</h5>
+            <p>
+                The vision of GalleryEveryhere is not just application where people can work on curations individually,
+                but ultimately a platform where people could share and collaborate with others on one curation with
+                different spaces. The challenge here is how to best "share" the exhibitions users create. It is
+                difficult to
+                design a world where we could fully capture tand hen reproduce the spatial data of every user's
+                exhibition. A potential path forward may be to ask users to build a 360-degree static image of their
+                exhibition, using sliced photographs akin to how some
+                applications stitch together panoramas.
+            </p>
+            <p>
+                Technology for building this app was reasonably
+                straightforward, and if it were to be built out into a full app, managing the server design, and how
+                the community interacts with one another, especially in sharing their experiences, would be the
+                utmost priority.
+            </p>
+            <h5>Conclusion</h5>
+            <p>
+                GalleryEverywhere is an experimental project that explores the ideas of ignorant museums, participatory
+                curation, and augmented reality. Its goal is to make the curation process accessible to everyone so that
+                everyone could make different meanings of museums, galleries, and exhibitions. This project evolved from
+                a Unity3D project to a Swift/SwiftUI project with significant improvements in its performance and UI
+                design. Future development is expected to break the limitation of physical space to allow users to share
+                their own curations with another on the other side of the world.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- contact section -->
+    <section class="section" id="contact">
+        <div class="container text-center">
+            <p class="section-subtitle">Any opportunity to collaborate? I'm in!</p>
+            <h6 class="section-title mb-5">Contact Me</h6>
+            <h6>Email:</h6>
+            <p> yp.chen@nyu.edu</p>
+            <h6>Mobile:</h6>
+            <p>+971 056 5486 809</p>
+            <h6>Social Media</h6>
+            <div class="social-links text-center m-auto ml-sm-auto">
+                <a href="https://www.facebook.com/yupu.chen.3" class="link" target="_blank" rel="noreferrer noopener"><i
+                        class="ti-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/yupu-chen-556868224/" class="link" target="_blank"
+                    rel="noreferrer noopener"><i class="ti-linkedin"></i></a>
+                <a href="https://www.instagram.com/yupu_chen12/" class="link" target="_blank"
+                    rel="noreferrer noopener"><i class="ti-instagram"></i></a>
+            </div>
+        </div><!-- end of container -->
+    </section><!-- end of contact section -->
+
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">
+            <p class="mb-0">Copyright
+                <script>document.write(new Date().getFullYear())</script> &copy; <a
+                    href="http://www.devcrud.com">DevCRUD</a> Distribution <a
+                    href="https://themewagon.com">ThemeWagon</a>
+            </p>
+
+        </footer>
+    </div> <!-- end of page footer -->
+
+    <!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Meyawo js -->
+    <script src="assets/js/meyawo.js"></script>
+
+</body>
+
+</html>
