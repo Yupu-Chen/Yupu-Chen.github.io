@@ -88,7 +88,56 @@
                 (RealityKit in later versions). This new version included new background features like scene
                 reconstruction and LiDR if supported the user's device as well as AR Coaching interface provided by
                 Apple. The latest version of GalleryEverywhere could detect different planes in real world precisely and
-                create anchors accordingly
+                create anchors accordingly. Below is a snippet of AR configuring code used in the project.
+                <pre>
+                    <code>
+                        func makeUIView(context: Context) -> ARView {
+        
+                            let arView = ARView(frame: .zero)
+                        
+                            // Start AR session
+                            let session = arView.session
+                            let config = ARWorldTrackingConfiguration()
+                            config.planeDetection = [.vertical, .horizontal]
+                            config.environmentTexturing = .automatic
+                            
+                            // toggle occulusion
+                            
+                            //1. check if supported by devcie
+                            guard ARWorldTrackingConfiguration.supportsFrameSemantics(.personSegmentationWithDepth) else {
+                                fatalError("People occlusion is not supported on this device.")
+                            }
+                            
+                            //2. add to the config
+                            config.frameSemantics.insert(.personSegmentationWithDepth)
+                            
+                            if ARWorldTrackingConfiguration.supportsSceneReconstruction(.meshWithClassification) {
+                                config.sceneReconstruction = .meshWithClassification
+                            } // check if the device supports LiDR for higher precision and accuracy
+                            
+                            arView.environment.sceneUnderstanding.options.insert(.occlusion)
+                            
+                            arView.enableObjectRemoval()
+                            
+                            session.run(config)
+                            
+                            // Add coaching overlay
+                            let coachingOverlay = ARCoachingOverlayView()
+                            coachingOverlay.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+                            coachingOverlay.session = session
+                            coachingOverlay.goal = .anyPlane
+                            coachingOverlay.activatesAutomatically = true
+                            arView.addSubview(coachingOverlay)
+                            
+                            // Set debug options
+                    #if DEBUG
+                            arView.debugOptions = [.showFeaturePoints, .showWorldOrigin, .showSceneUnderstanding]
+                    #endif
+                            self.raycastData.arViewGlobal = arView
+                            return arView
+                        }
+                    </code>
+                </pre>
             </p>
             <h5>User Interface / Interaction</h5>
             <p>
@@ -102,7 +151,7 @@
                 After the user puts at least one artwork to the AR scene, they can now manipulate what they have put
                 there. Simply holding and dragging on a particular work will enable the user to move the work on its own
                 plane. With two-finger zooming-in-and-out gesture, the user can change the scale of the work in the AR
-                scene. By doubleing clicking on onw artwork, the user is able to delete it from the AR scene.
+                scene. By holding on onw artwork, the user is able to delete it from the AR scene.
             </p>
             <p>
                 The minimalist design is also purposeful to avoid any implicit meaning-making as much as possible on our
