@@ -53,17 +53,54 @@
     </header><!-- end of page header -->
 
     <section class="section">
-        <div style="display: inline-block; margin-left: 7vw; max-width: fit-content;">
-            <a href="https://Yupu-Chen.github.io/portfolio/#portfolio" style="text-decoration: underline;">return to
-                main page</a>
-            <p></p>
-            <p>Creator: Yupu Chen</p>
-            <p>Collaborator: Ronit Singh, Yaakulya Sabbani, Yicheng Zhao</p>
-            <p>Instructor: Dr. Domna Banakou</p>
-            <p>Year: 2024</p>
-            <p>Place: Abu Dhabi, UAE</p>
-            <p>Keywords: VR, Meditation, Research</p>
+        <div style="display: flex; align-items: flex-start; margin-left: 20vw; margin-right: 25vw; max-width: 100vw;">
+            <div style="max-width: max-content;">
+                <a href="https://Yupu-Chen.github.io/portfolio/#portfolio" style="text-decoration: underline;">Return to Main Page</a>
+                <p>Creator: Yupu Chen</p>
+                <p>Collaborators: Ronit Singh, Yaakulya Sabbani, Yicheng Zhao</p>
+                <p>Instructor: Dr. Domna Banakou</p>
+                <p>Year: 2024</p>
+                <p>Place: Abu Dhabi, UAE</p>
+                <p>Keywords: VR, Meditation, Research</p>
+            </div>
+            <div style="margin-left: auto;">
+                <img id="smallImage" src="./assets/imgs/Poster.jpg" alt="Presentation Poster" 
+                     style="width: 180px; height: auto; cursor: zoom-in; transition: transform 0.3s ease-in-out;" 
+                     onclick="enlargeImage()">
+            </div>
         </div>
+        
+        <!-- Fullscreen Image Overlay with Animation -->
+        <div id="imageOverlay" style="display: none; position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; background-color: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 1000; transition: opacity 0.3s ease-in-out; opacity: 0;">
+            <img src="./assets/imgs/Poster.jpg" alt="Presentation Poster" id="overlayImage"
+                 style="max-width: 90%; max-height: 90%; transition: transform 0.3s ease-in-out; cursor: zoom-out;" onclick="closeImage()">
+        </div>
+        
+        <script>
+            function enlargeImage() {
+                const overlay = document.getElementById('imageOverlay');
+                overlay.style.display = 'flex';
+                setTimeout(() => {
+                    overlay.style.opacity = '1';
+                    document.getElementById('overlayImage').style.transform = 'scale(1)';
+                }, 10); // Small delay to allow CSS transition to take effect
+            }
+        
+            function closeImage() {
+                const overlay = document.getElementById('imageOverlay');
+                const overlayImage = document.getElementById('overlayImage');
+                overlay.style.opacity = '0';
+                overlayImage.style.transform = 'scale(0.5)'; // Shrinks the image before closing
+                setTimeout(() => {
+                    overlay.style.display = 'none';
+                }, 300); // Wait for the transition to complete before hiding the overlay
+            }
+        </script>
+        
+        
+        
+
+
         <div style="padding: auto; position: relative; margin-left: 20vw; margin-right: 20vw; max-width: fit-content;">
             <h5>Research Title</h5>
             <p>
@@ -131,7 +168,6 @@
                     frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                     style="position:absolute;top:0;left:0;width:100%;height:100%;"
                     title="Demo Video_VR Meditation"></iframe></div>
-            <script src="https://player.vimeo.com/api/player.js"></script>
             <h5>Result and Discussion</h5>
             <p>
                 This study finds varied results regarding various parameters in measuring the effectiveness of VR in
@@ -196,6 +232,8 @@
 
     <!-- Meyawo js -->
     <script src="assets/js/meyawo.js"></script>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
 
 </body>
 
